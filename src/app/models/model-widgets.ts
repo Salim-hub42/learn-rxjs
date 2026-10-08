@@ -1,8 +1,7 @@
+export type Category = 'Angular' | 'RxJS' | 'Pont' | 'Tests';
 
-export type category = 'Angular' |  'RxJS' | 'Pont' | 'Tests';
-
-export interface HomeWidget{
-  number: number,
-  title: string,
-  label: category
+export interface HomeWidget {
+  number: number;
+  title: string;
+  label: Category;
 }
