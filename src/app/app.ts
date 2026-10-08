@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('learn-rxjs');
+  protected readonly title = signal('Session Angular - Rxjs : Laboratoire de mise en pratique.');
 }
