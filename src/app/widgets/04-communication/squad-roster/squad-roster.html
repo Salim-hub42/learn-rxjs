@@ -13,9 +13,12 @@
 <button type="button" [attr.aria-pressed]="compactView()" (click)="toggleCompactView()">
   Vue compacte
 </button>
+
+<app-role-filter [(role)]="selectedRole" />
+
 <!-- La grille des cartes : autant de colonnes que la largeur le permet -->
 <div class="roster">
-  @for (soldier of soldiers(); track soldier.id) {
+  @for (soldier of visibleSoldiers(); track soldier.id) {
     <app-soldier-card
       [soldier]="soldier"
       [compact]="compactView()"

@@ -1,1 +1,9 @@
-<p>role-filter works!</p>
+@for (option of roleOptions; track option.value) {
+  <button
+    type="button"
+    [attr.aria-pressed]="role() === option.value"
+    (click)="selectRole(option.value)"
+  >
+    {{ option.label }}
+  </button>
+}
